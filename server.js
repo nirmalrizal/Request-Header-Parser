@@ -10,7 +10,7 @@ app.listen(3000,function(err){
 });
 
 
-app.get('/',function(req,res){
+app.get('/api/whoami/',function(req,res){
   res.json({
     'ipaddress' : req.ip,
     'language': req.headers["accept-language"].split(',')[0],
