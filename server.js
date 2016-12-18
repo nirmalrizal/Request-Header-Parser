@@ -11,6 +11,10 @@ app.listen(port,function(err){
   }
 });
 
+app.get('/',function(req,res){
+  res.redirect('/api/whoami');
+});
+
 
 app.get('/api/whoami/',function(req,res){
   res.json({
